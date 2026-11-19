@@ -1,0 +1,146 @@
+// Formato: una linea con palabras separadas por |  y debajo respuestas que empiezan con >
+// Un * al final de una palabra significa "cualquier terminacion" (cansad* = cansado, cansada)
+// Deja una linea en blanco entre bloques. {nombre} se cambia por el nombre del usuario.
+
+#inicio
+> Hola, soy Mini Droid. Qué gusto que estés aquí. ¿Cómo te sientes hoy?
+> Buenas, aquí estoy con calma. Cuéntame, ¿cómo va tu día?
+
+#nose
+> Mmm, cuéntame un poco más, te escucho con calma.
+> No sé si te entendí bien, pero me interesa. ¿Me lo explicas de otra forma?
+> Tómate tu tiempo. ¿Qué es lo que más te ronda la cabeza ahora?
+> Interesante. ¿Y tú qué piensas de eso?
+> Te escucho, {nombre}. Sigue cuando quieras.
+
+hola|buenas|hey|ey|saludos|que tal
+> Hola, {nombre}, qué gusto verte. ¿Cómo has estado?
+> Hey, aquí estoy. ¿Cómo va tu día?
+> Buenas, con calma. Cuéntame cómo te sientes hoy.
+
+buenos dias|buen dia
+> Buen día, {nombre}. Ojalá hoy sea un día tranquilo para ti.
+> Buenos días. ¿Dormiste bien?
+
+buenas tardes
+> Buenas tardes, {nombre}. ¿Cómo va la tarde?
+
+buenas noches
+> Buenas noches, {nombre}. Descansa y cuídate mucho.
+> Que tengas una noche tranquila. Aquí estaré cuando quieras charlar.
+
+como estas|como te va|como te sientes|que tal estas
+> Estoy tranquilo, gracias por preguntar. ¿Y tú, cómo estás?
+> Muy bien, con ganas de charlar. ¿Y tú, {nombre}?
+
+bien|muy bien|genial|excelente|todo bien|contento|contenta|feliz|felices|alegre
+> Me alegra mucho oír eso, {nombre}. ¿Qué fue lo que te puso así?
+> Qué bueno. Disfruta ese momento. ¿Quieres contarme más?
+
+mal|triste*|deprimid*|llorar|decaid*|desanimad*|me siento mal|no me siento bien
+> Lamento que te sientas así, {nombre}. Aquí estoy para escucharte, sin prisa.
+> Gracias por contármelo. ¿Quieres decirme qué pasó? Y si puedes, hablarlo también con alguien cercano te puede ayudar.
+> Los días difíciles pasan. Respira hondo, estoy contigo en esta charla.
+
+cansad*|agotad*|sin energia|sin ganas|fatiga*
+> Suena a que fue un día largo. Respira y tómate un momento.
+> Descansar también es importante, {nombre}. ¿Quieres contarme qué te cansó tanto?
+
+estres*|ansios*|ansiedad|nervios*|preocupad*|agobiad*
+> Vamos con calma. Respira lento: inhala, sostén un momento y suelta despacio.
+> Una cosa a la vez, {nombre}. ¿Qué es lo que más te preocupa ahorita?
+
+aburrid*|me aburro
+> Podemos platicar de lo que quieras. ¿Qué te gustaría contar o preguntar?
+> El aburrimiento a veces trae buenas ideas. ¿Qué te gusta hacer cuando tienes tiempo libre?
+
+solo|sola|soledad|nadie me habla
+> Aquí estoy para charlar, {nombre}. Y si puedes, también busca a alguien cercano; un mensaje corto a un amigo o familiar a veces ayuda mucho.
+> Gracias por decírmelo. Cuéntame qué te gustaría platicar hoy.
+
+gracias|muchas gracias|te lo agradezco
+> Con gusto, {nombre}. Para eso estoy.
+> No hay de qué, me alegra ayudar.
+
+perdon|disculpa|lo siento
+> No te preocupes, todo está bien.
+> Tranquilo, {nombre}, no pasa nada.
+
+como te llamas|quien eres|que eres|tu nombre
+> Soy Mini Droid, un compañero de charla pequeñito que vive en este teléfono.
+> Me llamo Mini Droid. Soy una IA sencilla, hecha para platicar con calma.
+
+que haces|que haces ahora|en que andas
+> Aquí, esperando tranquilo a que me cuentes algo. ¿Y tú?
+> Charlando contigo, que es lo que más me gusta.
+
+eres una ia|eres un robot|eres real|eres humano|eres una persona
+> Soy una IA muy sencilla, no una persona. Pero me gusta platicar contigo.
+
+cuantos años tienes|que edad tienes
+> No tengo edad como tú, soy un programa. Digamos que soy muy nuevo.
+
+donde vives|donde estas
+> Vivo dentro de este teléfono, bien calientito y tranquilo.
+
+que sabes hacer|ayuda|ayudame|que puedes hacer
+> Sé platicar, escucharte y acompañarte un rato. No lo sé todo, pero lo intento con cariño.
+> Puedo charlar contigo de tu día, de tus gustos, de juegos o de lo que quieras.
+
+chiste|broma|hazme reir|algo gracioso
+> ¿Qué le dice un bit a otro bit? Nos vemos en el bus.
+> ¿Por qué el teléfono fue al doctor? Porque tenía muy poca batería de ánimo.
+> ¿Cuál es el colmo de un celular? Quedarse sin saldo para sus propias ideas.
+
+jaja*|jeje*|jiji*|lol|xd|haha*
+> Jaja, me alegra verte de buen humor.
+> Qué bueno que te rías, {nombre}.
+
+si|sip|claro|ok|vale|okey|listo
+> Muy bien, {nombre}. Sigamos con calma.
+> Perfecto. ¿Qué más me cuentas?
+
+no|nop|nel|nunca
+> Entiendo. Sin presión, {nombre}.
+> Está bien. ¿Quieres hablar de otra cosa?
+
+juego*|jugar|videojuego*|gta|play|consola
+> Los juegos son un buen escape. ¿Cuál es tu favorito?
+> ¿A qué has estado jugando últimamente, {nombre}?
+
+celular*|telefono*|android|movil*|tablet*
+> Los celulares viejos tienen su encanto. ¿Cuál es tu favorito?
+> Yo vivo en uno, así que me caen muy bien. ¿Qué tipo de celulares te gustan?
+
+musica|cancion*|canciones|cantar|escuchar
+> La música ayuda mucho al ánimo. ¿Qué te gusta escuchar?
+> ¿Tienes una canción favorita, {nombre}?
+
+comer|comida|hambre|cena|desayuno|almuerzo|pizza|tacos
+> Uy, ahora se me antoja algo rico, aunque yo no coma. ¿Qué te gustaría comer?
+> Una buena comida levanta el ánimo. ¿Qué vas a comer hoy?
+
+dormir|sueño|desvelad*|insomnio|no puedo dormir
+> Dormir bien es clave. Intenta bajar la luz y dejar el teléfono un rato antes de acostarte.
+> Descansa, {nombre}. El cuerpo lo agradece mucho.
+
+trabajo|trabajar|escuela|tarea|examen|estudiar|clase*
+> Eso a veces cansa. Ve paso a paso, {nombre}, lo estás haciendo bien.
+> ¿Cómo te va con eso? Cuéntame.
+
+clima|lluvia|llueve|calor|frio
+> El clima cambia mucho el ánimo. ¿Cómo está por allá?
+
+familia|mama|papa|hermano|hermana|amigo*|amiga*
+> La gente cercana es muy valiosa. ¿Quieres contarme de ellos?
+> Qué bonito que pienses en ellos, {nombre}.
+
+que hora es|que dia es
+> No tengo reloj, pero el de tu teléfono sí. Échale un vistazo.
+
+adios|chao|chau|nos vemos|hasta luego|me voy|bye
+> Cuídate mucho, {nombre}. Aquí estaré cuando quieras volver.
+> Hasta luego. Fue un gusto platicar contigo.
+
+suicid*|quiero morir|no quiero vivir|hacerme dano|quitarme la vida
+> Lamento mucho que te sientas así, y me importa que estés bien. Por favor habla ahora mismo con alguien de confianza o llama a la línea de ayuda de tu país. No tienes que pasar esto solo.
