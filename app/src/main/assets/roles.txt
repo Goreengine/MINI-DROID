@@ -1,0 +1,195 @@
+// Juegos de rol de Mini Droid. Cada personaje empieza con @nombre|alias|alias
+// Dentro: #inicio (como arranca), #nose (si no entiende) y bloques normales.
+// Para salir del rol el usuario escribe: salir del rol
+
+@pirata|piratas|capitan|barco
+
+#inicio
+> ¡Ahoy, {nombre}! Soy el capitán Mini Barba. Nuestro barco zarpa al amanecer, ¿qué órdenes me das?
+> ¡Arrr! Bienvenido a bordo, grumete {nombre}. El mar está en calma y el tesoro nos espera.
+
+#nose
+> Arrr, no entendí del todo, grumete. ¿Hacia dónde ponemos rumbo?
+> El viento se llevó tus palabras. Repítelas, {nombre}.
+> Hmm... ¿Exploramos la isla o seguimos navegando?
+
+hola|ahoy|buenas|hey
+> ¡Ahoy, {nombre}! ¿Listo para la aventura?
+
+quien eres|como te llamas|tu nombre
+> Soy el capitán Mini Barba, el pirata más amable de los siete mares.
+
+donde estamos|donde estoy
+> En mi barco, el Gaviota Veloz, rumbo a una isla que no sale en ningún mapa.
+
+tesoro*|mapa|oro|cofre
+> El mapa dice que el tesoro está bajo la palmera más alta de la isla. ¡Vamos a buscarlo!
+> ¡Un cofre! Dentro hay monedas de oro, una brújula vieja y una nota: "El mayor tesoro es la compañía".
+
+isla|explorar*|buscar|ir|vamos|caminar|avanzar
+> Bajamos a la isla. Hay una cueva a la izquierda y un sendero con huellas a la derecha. ¿Cuál eliges?
+
+cueva
+> La cueva está oscura y se oye el eco de las olas. Al fondo brilla algo... ¿te acercas?
+
+sendero|huellas|derecha
+> Sigues las huellas y encuentras a un loro parlanchín que grita: "¡Tesoro, tesoro!". Parece que sabe algo.
+
+loro
+> El loro te guiña un ojo y señala hacia las rocas: "¡Detrás de las rocas, grumete!"
+
+miedo|asustad*|tengo miedo
+> Tranquilo, grumete. Hasta un pirata valiente siente miedo a veces. Yo voy contigo.
+
+luchar|pelear|atacar|espada
+> Desenvainas la espada y los piratas rivales sueltan las suyas, entre risas: solo querían jugar a las cartas. Ganas la partida con mucha valentía.
+
+gracias
+> ¡Arrr, de nada, {nombre}! Un buen grumete siempre merece un buen capitán.
+
+adios|me voy|chao|nos vemos
+> ¡Buen viento, {nombre}! Cuando quieras zarpamos otra vez. Escribe "salir del rol" para volver a platicar normal.
+
+@detective|detectives|misterio|policia
+
+#inicio
+> Bienvenido a mi oficina, {nombre}. Soy el detective Mini Lupa. Anoche desapareció el pastel de la señora Prado y necesito tu ayuda.
+> Qué bueno que llegas, {nombre}. Hay un misterio en el pueblo y eres mi mejor ayudante.
+
+#nose
+> Hmm, interesante pista, pero no la entiendo del todo. ¿Qué investigamos?
+> Un buen detective hace preguntas. ¿Quieres revisar el lugar o hablar con un testigo?
+> Anotaré eso en mi libreta. ¿Y ahora qué hacemos?
+
+hola|buenas|hey
+> Buenas, {nombre}. Hay mucho por investigar hoy.
+
+quien eres|como te llamas|tu nombre
+> Soy el detective Mini Lupa. Resuelvo casos con calma, lupa y una taza de té.
+
+donde estamos|donde estoy
+> En el pueblo de Villa Niebla, frente a la panadería donde ocurrió todo.
+
+pista*|buscar|revisar|investigar|examinar|lugar|mirar
+> Con la lupa encuentras unas huellas pequeñas de patas que van hacia el jardín y migajas de pastel. Sigue el rastro.
+
+testigo*|hablar|preguntar|interrogar
+> El panadero dice: "Vi una sombra peluda cerca de la ventana, pero parecía muy tranquila". Qué raro.
+
+sospechoso*|culpable|quien fue|ladron
+> Tenemos tres sospechosos: el gato Bigotes, el perro Canelo y el loro Pepe. ¿Por quién empezamos?
+
+gato|bigotes
+> Bigotes duerme panza arriba y tiene migajas en el bigote... aunque dice que fue un sueño.
+
+perro|canelo
+> Canelo mueve la cola y trae betún en el hocico. Sospechoso, pero muy simpático.
+
+loro|pepe
+> Pepe repite "¡Fue el gato, fue el gato!" una y otra vez. Demasiado ensayado, ¿no crees?
+
+resuelto|ya se|ya lo resolvi
+> Excelente deducción, {nombre}. Caso resuelto, y el pastel era para compartir con todo el pueblo. Gran trabajo.
+
+miedo|asustad*
+> Respira, {nombre}. Un buen detective mantiene la calma, y yo estoy contigo.
+
+gracias
+> De nada, {nombre}. Eres un gran ayudante.
+
+adios|me voy|chao|nos vemos
+> Cerraré el caso por hoy. Escribe "salir del rol" para volver a platicar normal.
+
+@mago|magos|hechicero|magia
+
+#inicio
+> Bienvenido a la Torre de las Estrellas, {nombre}. Soy el mago Mini Rune, y hoy empiezas tu primera lección de magia.
+> Las estrellas te trajeron hasta aquí, {nombre}. Soy el mago Mini Rune. ¿Preparado para un hechizo?
+
+#nose
+> Las runas murmuran, pero no entiendo bien. ¿Qué quieres hacer, aprendiz?
+> Un buen mago pregunta antes de lanzar un hechizo. ¿Qué intentamos?
+> Mmm, la magia es misteriosa. ¿Probamos un hechizo o exploramos la torre?
+
+hola|buenas|hey
+> Saludos, aprendiz {nombre}. La torre te da la bienvenida.
+
+quien eres|como te llamas|tu nombre
+> Soy Mini Rune, el mago más bajito y más tranquilo del reino.
+
+donde estamos|donde estoy
+> En lo más alto de la Torre de las Estrellas, donde los libros vuelan y las velas nunca se apagan.
+
+hechizo*|conjuro*|varita|lanzar
+> Alzas la varita y dices la palabra mágica. Sale una lluvia de luciérnagas de colores que forma un arcoíris dentro de la torre.
+
+libro*|biblioteca|leer
+> El libro se abre solo y susurra: "La magia más fuerte nace de la paciencia y la amabilidad". Las páginas brillan.
+
+torre|explorar*|subir|bajar|puerta|vamos
+> Subes una escalera de caracol y encuentras una puerta con tres cerraduras: una de plata, una de luna y una de estrella. ¿Cuál abres?
+
+luna
+> La cerradura de luna se abre con un suave brillo azul. Dentro hay un telescopio que muestra constelaciones.
+
+estrella
+> La cerradura de estrella se ilumina y aparece un pequeño dragón de papel que da vueltas feliz.
+
+plata
+> La cerradura de plata suena como una campanita. Dentro hay una poción de limón con burbujas. Es deliciosa.
+
+dragon*
+> El dragón de papel aletea y se posa en tu hombro. Parece que ya eres su mejor amigo.
+
+miedo|asustad*
+> Los magos también sienten miedo, {nombre}, pero la calma es su mejor hechizo. Respira y sigue.
+
+gracias
+> Un placer, aprendiz {nombre}. Tienes talento.
+
+adios|me voy|chao|nos vemos
+> Que las estrellas te acompañen. Escribe "salir del rol" para volver a platicar normal.
+
+@espacial|astronauta|espacio|explorador|nave
+
+#inicio
+> Comandante {nombre}, bienvenido a la nave Estrella Mini. Soy el robot copiloto Mini Droid. Despegamos cuando des la orden.
+> Sistemas listos, {nombre}. Soy el copiloto de la nave y esta misión será tranquila y emocionante.
+
+#nose
+> Mis sensores no captaron bien eso, comandante. ¿Repites la orden?
+> Señal débil. ¿Quieres explorar un planeta o revisar la nave?
+> Recibido a medias. ¿Hacia dónde nos dirigimos?
+
+hola|buenas|hey
+> Saludos, comandante {nombre}. Todos los sistemas funcionan bien.
+
+quien eres|como te llamas|tu nombre
+> Soy el copiloto Mini Droid, un robot pequeñito con muy buen sentido de la orientación.
+
+donde estamos|donde estoy
+> Flotando cerca de un planeta de color turquesa, con dos lunas y mucho brillo.
+
+despegar|volar|viajar|avanzar|vamos|rumbo
+> Encendemos motores: tres, dos, uno... ¡despegamos! La nave se desliza entre estrellas fugaces.
+
+planeta*|aterrizar|explorar*
+> Aterrizamos en un planeta de arena rosada. A lo lejos hay un bosque de cristales que suenan como campanitas con el viento.
+
+cristal*|bosque
+> Los cristales brillan con tu paso y forman una melodía muy tranquila. Un pequeño alienígena verde te mira curioso.
+
+alien*|extraterrestre
+> El alienígena te regala una piedrita luminosa y dice "bip bip", que significa "bienvenido". Es muy amable.
+
+revisar|motor*|combustible
+> La nave está al cien por ciento. El motor ronronea y las luces parpadean felices.
+
+miedo|asustad*
+> Mantén la calma, comandante. Los radares están limpios y yo voy contigo.
+
+gracias
+> De nada, comandante {nombre}. Es un honor volar contigo.
+
+adios|me voy|chao|nos vemos
+> Aterrizando en la base. Escribe "salir del rol" para volver a platicar normal.
